@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>arkus on the net</title>
+    
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <meta name="robots" content="noodp"/>
+
+    <link rel="stylesheet" href="https://blog.arkusonthe.net/style.css">
+    <link rel="stylesheet" href="https://blog.arkusonthe.net/color/green.css">
+
+        <link rel="stylesheet" href="https://blog.arkusonthe.net/color/background_pink.css">
+    
+    <link rel="stylesheet" href="https://blog.arkusonthe.net/font-hack-subset.css">
+
+        <link rel="shortcut icon" type="image/png" href="/favicon.png">
+    
+    </head>
+
+<body class="">
+<div class="container">
+    
+    <header class="header">
+        <div class="header__inner">
+            <div class="header__logo">
+                    
+                <a href="https://blog.arkusonthe.net" style="text-decoration: none;">
+                    <div class="logo">
+                      
+                            arkus on the net
+                        
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        
+        
+                <nav class="menu">
+            <ul class="menu__inner">
+                <li class="active"><a href="https://blog.arkusonthe.net">blog</a></li>
+            
+                <li><a href="https://blog.arkusonthe.net/tags">tags</a></li>
+            
+                <li><a href="https://blog.arkusonthe.net/archive">archive</a></li>
+            
+                <li><a href="https://blog.arkusonthe.net/about">about me</a></li>
+            
+                <li><a href="https://github.com/arkus7" target="_blank" rel="noopener noreferrer">github</a></li>
+            </ul>
+        </nav>
+    
+    
+        
+    </header>
+    
+
+    <div class="content">
+        
+        <div class="posts">
+                <div class="post on-list">
+                    
+    <h1 class="post-title"><a href="https://blog.arkusonthe.net/typescript-hiding-secrets-from-console-log/">Hiding secrets from console.log (and other loggers)</a></h1>
+    <div class="post-meta-inline">
+        
+    <span class="post-date">
+            2023-07-09
+        </span>
+
+    </div>
+
+    
+        <span class="post-tags-inline">
+                :: tags:&nbsp;
+                <a class="post-tag" href="https://blog.arkusonthe.net/tags/node-js/">#Node.js</a>&nbsp;
+                <a class="post-tag" href="https://blog.arkusonthe.net/tags/typescript/">#TypeScript</a>&nbsp;
+                <a class="post-tag" href="https://blog.arkusonthe.net/tags/security/">#security</a></span>
+    
+
+                    
+        <div class="post-content">
+            <p>How many times have you found sensitive information in the logs (like <code>console.log</code> call or actual log files from <code>winston</code> or <code>pino</code>)?
+Have you ever come across sensitive information such as a user's plain-text password or a database connection string in the logs?</p>
+<p>It's very common for Node.js developers to use <code>console.log()</code> as a debugging method. It's easy to add a bunch of <code>console.log</code> statements in your code to see how values of variables change. Unfortunately, it's also common that these logs stay in the codebase, potentially logging things that shouldn't be logged at all.</p>
+<p>In this post, I'd like to show you how you can hide sensitive data (like secrets or user passwords) from being logged, whether it's <code>console.log</code> (and its siblings i.e. <code>console.warn</code> or <code>console.error</code>) or any other logger commonly used in Node.js ecosystem.</p>
+
+        </div>
+        <div>
+            <!-- &#xFE0E; -- force text style - some devices render this as emoji -->
+            <a class="read-more button" href="https://blog.arkusonthe.net/typescript-hiding-secrets-from-console-log/">
+                <span class="button__text">Read more</span>&nbsp;
+                <span class="button__icon">&#8617;&#xFE0E;</span>
+            </a>
+        </div>
+    
+
+                </div>
+            
+                <div class="post on-list">
+                    
+    <h1 class="post-title"><a href="https://blog.arkusonthe.net/typescript-exhaustive-switch/">Exhaustive Switch Statements in TypeScript</a></h1>
+    <div class="post-meta-inline">
+        
+    <span class="post-date">
+            2023-06-14
+        </span>
+
+    </div>
+
+    
+        <span class="post-tags-inline">
+                :: tags:&nbsp;
+                <a class="post-tag" href="https://blog.arkusonthe.net/tags/typescript/">#TypeScript</a>&nbsp;
+                <a class="post-tag" href="https://blog.arkusonthe.net/tags/type-safety/">#type safety</a></span>
+    
+
+                    
+        <div class="post-content">
+            <p>When working on a blog post about enums in Rust, I realized that <code>switch</code> statements in TypeScript are not exhaustive.</p>
+<p>This means that the compiler doesn't warn you if you forget to handle a case in a <code>switch</code> statement.
+This is a problem because it can lead to bugs that are difficult to track down.</p>
+<p>As you may know, I'm a big fan of type safety. I find it very concerning that forgetting to handle an enum variant doesn't result in a compiler error.</p>
+<p>In this post, I'll show you how to make your <code>switch</code> statements exhaustive so that you can avoid these bugs.</p>
+
+        </div>
+        <div>
+            <!-- &#xFE0E; -- force text style - some devices render this as emoji -->
+            <a class="read-more button" href="https://blog.arkusonthe.net/typescript-exhaustive-switch/">
+                <span class="button__text">Read more</span>&nbsp;
+                <span class="button__icon">&#8617;&#xFE0E;</span>
+            </a>
+        </div>
+    
+
+                </div>
+            <div class="pagination">
+                <div class="pagination__buttons"></div>
+            </div>
+        </div>
+        
+    </div>
+
+    
+    <footer class="footer">
+        <div class="footer__inner">
+                <div class="copyright">
+                        <span>© 
+    2023
+ Arkadiusz Żmudzin</span>
+                    <span class="copyright-theme">
+                        <span class="copyright-theme-sep">:: </span>
+                        Theme: <a href="https://github.com/pawroman/zola-theme-terminimal/">Terminimal</a> by pawroman
+                    </span>
+                </div>
+            </div>
+    </footer>
+    
+
+</div>
+</body>
+
+</html>
